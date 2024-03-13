@@ -53,8 +53,8 @@ No data preparation tasks were required as all the data provided had already bee
       1. Analyzing search data and shifting budget towards the engines, campaigns, or keywords driving the strongest conversion rates
       2. Comparing user behavior patterns across traffic sources to inform creative and messaging strategy
       3. Identifying opportunities to eliminate wasted spend or scale high-converting traffic
-   - Measure by?
-      - Website_session / website_pageview / orders
+   - Measured by?
+      - website_session // order_id
          1. We use the utm parameters stored in the database to identify paid website sessions
          2. From our session data, we can link to our order data to understand how much revenue our paid campaigns are driving
        
@@ -72,97 +72,30 @@ Overall, the data indicates a positive trend of increasing website traffic and o
 
 ![eCommerce Q2-2](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/d36bc3c8-134d-4151-8871-c632f9820b59)
 
-
-     
-### _1) Consumer Preferences - Findings_
-1. A correlation coefficient of 0.65 could be interpreted as either a "good" or "moderate" correlation. Therefore, there is a positive correlation between revenue and reviews, suggesting that products with higher reviews tend to generate higher revenue.
-2. The correlation coefficient of 0.73 indicates the strength and direction of the linear relationship between description length and the average rating.
-     
-![Correlation between Revenue and Reviews](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/43de922e-bb14-4e04-8ed0-9638154a2c54)
-
-![Correlation Between Description Length and Mean Rating](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/23ff228c-94d6-49e5-8190-ec332522cdb2)
+#### **Brand Campaigns**:
+There has been a noticeable increase in brand sessions and orders over the months, indicating a growing interest in brand-specific marketing efforts.
+The brand campaign conversion rate fluctuates, peaking at 9.23% in April but stabilizing around 4-6% in subsequent months. This suggests that while there may be variations, the overall effectiveness of brand campaigns in converting sessions to orders remains relatively consistent.
 
 
-### _1) Consumer Preferences - Recommendations_
-- Leverage the positive correlation observed between revenue and reviews to enhance marketing strategies, emphasizing the importance of customer reviews in promotional campaigns and product positioning.
-- Consider optimizing product descriptions to a length that resonates well with customers. This could potentially lead to higher average ratings.
+#### **Nonbrand Campaigns**:
+Nonbrand sessions and orders also show an upward trend over the months, indicating increasing traffic and interest from users who are not specifically searching for the brand.
+The nonbrand campaign conversion rate remains relatively stable around 3-4%, suggesting a consistent level of effectiveness in converting nonbrand sessions into orders.     
 
 
 
-### _2) Product Offerings_
-- #### **Q:** Do Nike and Adidas offer differing discount amounts?
-    - Why do I want to know? 
-        - Aim to investigate and compare the discount strategies employed by Nike and Adidas, providing insights into their promotional approaches.
-    - So what?
-        - Navigate the complexities of differing discount amounts, optimizing their strategies to achieve a balance between attracting customers, maintaining brand value, and sustaining profitable operations
-    - Measure by?
-        - brand // discount
+### _3) Demonstrate a comprehensive understanding of traffic sources by analyzing nonbrand Gsearch sessions and orders split by device type._
+   - Why do I want to know?
+      - Understanding nonbrand Gsearch sessions by device type is essential for optimizing user experience and targeting marketing efforts effectively.
+   - So what?
+      - Analyzing this data enables strategic decision-making, leading to improved user engagement and conversion rates through device-specific optimization and targeted marketing strategies.
+   - Measured by?
+        - website_session // device_type // order_id
 
-
-- #### **Q:** What distinguishes the price points between Nike and Adidas products?
-    - Why do I want to know?: 
-        - Focus on understanding the comparative pricing strategies of Nike and Adidas, exploring the differences in their product price points.
-    - So what? 
-        - Analyze how the variations in price points may impact consumer perception, market positioning, and business strategies for Nike and Adidas
-    - Measure by?
-        - brand // listing_price
-
-
-### _2) Product Offerings - Findings_
-
-First, the number of offered discounts by Adidas is **5 times higher** than the ones offered by Nike. Second, both brands offer products in all price categories, but Adidas has a higher number of products in every category compared to Nike. Additionally, it reveals that the _**"Premium" category**_ has the highest average revenue. These findings suggest that Nike and Adidas have distinct price points and the amount of offered discounts for their products, with Adidas offering a higher number of products across price points and potentially generating higher average revenue.
-
-
-![Distribution of Offered Discount Amounts between Adidas and Nike](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/0b5bfc01-4bdd-4b17-a874-a0f43df0dced)
-
-![Number of Different Products by Price Category between Adidas and Nike](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/d0d04744-dfc4-46db-828d-1bb2540aaf8d)
-
-![Average Revenue by Price Category between Adidas and Nike](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/469f76fc-5173-43c1-ada9-843f919c3be6)
-
-
-### _2) Product Offerings - Recommendations_
-- Analyze Nike's discount ratio in comparison to Adidas and explore opportunities to optimize discount strategies, ensuring they align with market dynamics while maintaining brand value.
-- Evaluate and diversify the product categories to compete more effectively with Adidas, addressing potential gaps and increasing market share.
-
-
-### _3) Financial Performance_
-- #### **Q:** How do the product categories contribute to the company's revenue? 
-    - Why do I want to know? 
-        - To evaluate the financial performance of different product categories and understand their contribution to overall revenue.
-    - So what?
-        - This information can help in adjusting inventory management strategies based on insights from each product category
-
-- #### **Q:** How does the median revenue differ across product categories?
-    - Why do I want to know? 
-        - To compare the median revenue generated by different categories.
-    - So what?
-        - This comparison can help optimize marketing and sales efforts based on the relative performance of each category
-
-### _3) Financial Performance - Findings_
-
-- Contribution to Company Revenue:
-
-Footwear dominates the company's revenue, accounting for a substantial 84.7% of the total. This suggests a strong market demand for footwear products, indicating a potential area for further investment and strategic focus.
-Clothing, while contributing 15.3%, is notably lower in comparison. It's important to assess the reasons behind this lower contribution and explore opportunities for growth in the clothing segment.
-
-![Total Number of Products Sold by Product Category](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/b07af180-98d0-4fa5-a820-8eb875961e82)
+<img width="754" alt="eCommerce Q3" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/4ca43b81-2686-4061-a46b-b80125b1163c">
 
 
 
 
-
-- Median Revenue Disparity:
-
-The median revenue for footwear is significantly **four times higher** compared to clothing. This implies that, on average, each sale in the footwear category brings in more revenue compared to the clothing category.
-The wide gap in median revenue raises questions about the pricing strategy, customer preferences, and market positioning for both product categories.
-
-![Comparison of Median Revenue - Footwear vs Clothing](https://github.com/fangoaish/Python__Analysis-of-Sportswear-Product-Sales-Adidas-vs.-Nike/assets/51399519/c058d361-2949-45f0-9da1-aff9a137a02a)
-
-
-### _3) Financial Performance - Recommendations_
-Given that footwear is the primary revenue driver, it is advisable to continue investing in this category. Explore opportunities to expand the footwear product line, introduce new styles, and leverage market trends to maintain or increase its market share.
-
-While clothing contributes less to the overall revenue, it remains a valuable part of the business. Consider strategies to diversify the clothing portfolio, perhaps by introducing new designs, collaborating with influencers or designers, or identifying untapped market segments to increase its market presence.
 
 ## Challenges
 The challenge was to determine the proportion of footwear products of both brands from their clothing counterparts without a specific product type column. Initially, I generated a keyword string to filter relevant rows from our primary DataFrame. Subsequently, I established a counter DataFrame to preserve data whose product IDs are absent from our initial subset, facilitating the differentiation between the two categories of sportswear.
