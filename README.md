@@ -61,7 +61,8 @@ No data preparation tasks were required as all the data provided had already bee
 
 <img width="524" alt="SQL P1Q1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/c8329a5b-81a0-44df-a504-35db08064f61">
 
-![Conversion Rate of Sessions to Orders](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/694d72fb-2ed8-439d-b432-266b3f393792)
+![Conversion Rates of Sessions to Orders](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/c65d4871-0058-4d7d-aeaa-af7e14444a6d)
+
 
 
 
@@ -71,7 +72,8 @@ Overall, the data indicates a positive trend of increasing website traffic and o
 
 <img width="797" alt="eCommerce Q2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/34f65380-0a94-47b2-ad55-df5b8f03f861">
 
-![Conversion Rate Between Brand and Nonbrand Campaigns](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/cd769438-840b-403d-a5c2-922567db74e9)
+![Conversion Rates Between Brand and Nonbrand Campaigns](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/5610e6f0-6739-4507-a2bf-73b88ff055f9)
+
 
 
 #### **Brand Campaigns**:
@@ -99,7 +101,8 @@ The nonbrand campaign conversion rate remains relatively stable around 3-4%, sug
 
 ![Orders by Device Types](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/9628b4bc-3051-42c7-9234-cff0a7d33bcd)
 
-![Conversion Rate Between Desktop and Mobile](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/96e97e45-6805-403d-a441-311bb426325b)
+![Conversion Rates Between Desktop and Mobile](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/0bca869d-e4f7-4aa8-ba6c-246207f393b7)
+
 
 **Desktop vs. Mobile Sessions**: There is a clear trend of increasing sessions on both desktop and mobile devices over the months, with desktop sessions consistently higher than mobile sessions.
 
