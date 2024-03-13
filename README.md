@@ -24,6 +24,7 @@ No data preparation tasks were required as all the data provided had already bee
 
 
 ## Business Objectives
+These questions will be addressed accordingly in Exploratory Data Analysis
 1. Showcase the growth of Gsearch as the primary driver of business by pulling monthly trends for search sessions and orders.
    
 2. Evaluate the performance of nonbrand and brand campaigns separately to determine if brand campaigns are gaining traction.
