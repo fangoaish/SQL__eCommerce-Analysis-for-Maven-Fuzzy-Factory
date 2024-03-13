@@ -6,7 +6,7 @@ This project focuses on the analysis and optimization of marketing channels, mea
 ![ecommerce image](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/491ac749-4f53-4941-ab04-ad8b0e696fdb)
 
 
-## Business Objectives
+## Business Goals
 We'll use MySQL to understand how **_customers access and interact with the website_**, analyze **_landing page performance and conversion_**, and explore **_product-level sales_**.
 
 
@@ -23,7 +23,7 @@ We will be working with six related tables, which contain eCommerce data about:
 No data preparation tasks were required as all the data provided had already been cleaned out prior.
 
 
-## Business Goals
+## Business Objectives
 1. Showcase the growth of Gsearch as the primary driver of business by pulling monthly trends for search sessions and orders.
    
 2. Evaluate the performance of nonbrand and brand campaigns separately to determine if brand campaigns are gaining traction.
@@ -45,24 +45,34 @@ No data preparation tasks were required as all the data provided had already bee
 10. Assess the cross-selling effectiveness of products since the 4th product was introduced as a primary product, by analyzing sales data to understand how well each product cross-sells from one another.
 
 ## Exploratory Data Analysis
-Before diving into the data sea, the hypotheses will be categorized systematically based on our goal, establishing a structured and logical framework for thoughtful analysis.
 
-### _1) Consumer Preferences_
-- #### **Q:** Does a correlation exist between revenue and reviews?
-    - Why do I want to know? 
-        - Explore the strength of any correlation that may exist between a product's revenue and its reviews
-    - So what?     
-        - Implement initiatives to encourage and incentivize customer reviews, fostering increased engagement and potentially driving higher revenues through positive customer feedback
-    - Measure by?
-        - revenue // reviews
+### _1) Showcase the growth of Gsearch as the primary driver of business by pulling monthly trends for search sessions and orders._
+   - Why do I want to know?
+      - to understand where the customers are coming from and which channels are driving the highest quality traffic
+   - So what?
+      1. Analyzing search data and shifting budget towards the engines, campaigns, or keywords driving the strongest conversion rates
+      2. Comparing user behavior patterns across traffic sources to inform creative and messaging strategy
+      3. Identifying opportunities to eliminate wasted spend or scale high-converting traffic
+   - Measure by?
+      - Website_session / website_pageview / orders
+         1. We use the utm parameters stored in the database to identify paid website sessions
+         2. From our session data, we can link to our order data to understand how much revenue our paid campaigns are driving
+       
 
-- #### **Q:** Is there an influence on a product's rating and reviews based on the length of its description?
-    -  Why do I want to know?
-        - Explore the potential impact of product description length on customer ratings and reviews, addressing the relationship between product information and consumer perception.
-    - So what?
-        - If positive, highlight product features within the optimal description length to attract and engage customers effectively
-    - Measure by?
-        - description // reviews // rating
+<img width="524" alt="SQL P1Q1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/c8329a5b-81a0-44df-a504-35db08064f61">
+
+![eCommerce Q1_1](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/0b7b4810-4dd2-4f7e-81c3-14053f9ff864)
+
+
+Overall, the data indicates a positive trend of increasing website traffic and orders over time, with a consistent conversion rate, suggesting that the website is effectively converting sessions into orders regardless of fluctuations in traffic volume. 
+
+### _2) Evaluate the performance of nonbrand and brand campaigns separately to determine if brand campaigns are gaining traction._
+
+<img width="797" alt="eCommerce Q2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/34f65380-0a94-47b2-ad55-df5b8f03f861">
+
+![eCommerce Q2-2](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/d36bc3c8-134d-4151-8871-c632f9820b59)
+
+
      
 ### _1) Consumer Preferences - Findings_
 1. A correlation coefficient of 0.65 could be interpreted as either a "good" or "moderate" correlation. Therefore, there is a positive correlation between revenue and reviews, suggesting that products with higher reviews tend to generate higher revenue.
