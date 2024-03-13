@@ -63,9 +63,6 @@ No data preparation tasks were required as all the data provided had already bee
 
 ![Conversion Rates of Sessions to Orders](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/c65d4871-0058-4d7d-aeaa-af7e14444a6d)
 
-
-
-
 Overall, the data indicates a positive trend of increasing website traffic and orders over time, with a consistent conversion rate, suggesting that the website is effectively converting sessions into orders regardless of fluctuations in traffic volume. 
 
 ### _2) Evaluate the performance of nonbrand and brand campaigns separately to determine if brand campaigns are gaining traction._
@@ -76,12 +73,12 @@ Overall, the data indicates a positive trend of increasing website traffic and o
 
 
 
-#### **Brand Campaigns**:
+- #### **Brand Campaigns**:
 There has been a noticeable increase in brand sessions and orders over the months, indicating a growing interest in brand-specific marketing efforts.
 The brand campaign conversion rate fluctuates, peaking at 9.23% in April but stabilizing around 4-6% in subsequent months. This suggests that while there may be variations, the overall effectiveness of brand campaigns in converting sessions to orders remains relatively consistent.
 
 
-#### **Nonbrand Campaigns**:
+- #### **Nonbrand Campaigns**:
 Nonbrand sessions and orders also show an upward trend over the months, indicating increasing traffic and interest from users who are not specifically searching for the brand.
 The nonbrand campaign conversion rate remains relatively stable around 3-4%, suggesting a consistent level of effectiveness in converting nonbrand sessions into orders.     
 
@@ -104,32 +101,55 @@ The nonbrand campaign conversion rate remains relatively stable around 3-4%, sug
 ![Conversion Rates Between Desktop and Mobile](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/0bca869d-e4f7-4aa8-ba6c-246207f393b7)
 
 
-**Desktop vs. Mobile Sessions**: There is a clear trend of increasing sessions on both desktop and mobile devices over the months, with desktop sessions consistently higher than mobile sessions.
+- **Desktop vs. Mobile Sessions**: There is a clear trend of increasing sessions on both desktop and mobile devices over the months, with desktop sessions consistently higher than mobile sessions.
 
-**Desktop vs. Mobile Orders**: Similarly, desktop orders outpace mobile orders, indicating that desktop users are more likely to make purchases compared to mobile users.
+- **Desktop vs. Mobile Orders**: Similarly, desktop orders outpace mobile orders, indicating that desktop users are more likely to make purchases compared to mobile users.
 
-**Conversion Rates**: While desktop conversion rates remain relatively stable around 4-5%, mobile conversion rates fluctuate, with some months showing significantly lower rates.
+- **Conversion Rates**: While desktop conversion rates remain relatively stable at around 4-5%, mobile conversion rates fluctuate, with some months showing significantly lower rates.
 
-**Conclusion**: Desktop devices dominate both sessions and orders, suggesting that desktop users are the primary drivers of traffic and conversions. However, it's essential to address the lower conversion rates on mobile devices to capitalize fully on this traffic source. Strategies aimed at optimizing the mobile user experience and improving mobile conversion rates should be prioritized to ensure comprehensive understanding and effective utilization of traffic sources across different devices
+- **Conclusion**: Desktop devices dominate both sessions and orders, suggesting that desktop users are the primary drivers of traffic and conversions. However, it's essential to address the lower conversion rates on mobile devices to capitalize fully on this traffic source. Strategies aimed at optimizing the mobile user experience and improving mobile conversion rates should be prioritized to ensure a comprehensive understanding and effective utilization of traffic sources across different devices
+
+
+### _4) Compare monthly trends of Gsearch traffic with other channels to understand their respective impacts on overall traffic._
+First, we'll check the different UTM sources and referrers to identify the incoming traffic.
+
+<img width="339" alt="eCommerce Q4 -1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/883cc548-6d36-485c-a00a-a0f8964d936d">
+
+
+we have four channels:
+   1. gsearch
+   2. bsearch
+   3. organic
+   4. direct
+
+
+- If utm_source and utm_campaign IS NULL and http_referer IS NOT NULL -> _organic search_
+- If utm_source and utm_campaign IS NULL and http_referer IS NULL -> _direct_
+
+<img width="1266" alt="eCommerce Q4 -2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/8967abae-3590-4e50-9092-d20c6af90cf9">
+
+![Average Conversion Rates By Channels](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/198cd5b7-8143-42c3-b6a1-eb29e7f5deb1)
+
+- **Gsearch Performance**: Gsearch consistently maintains a significant share of overall traffic throughout the months, with steady growth in sessions and orders. The conversion rate for Gsearch remains relatively stable, averaging 3.73%.
+
+- **Other Channels**: While channels like branded search (Bsearch), direct, and organic traffic contribute to overall traffic. Among these, Bsearch stands out with the highest conversion rate at 4.82%, followed by direct at 4.98%, and organic traffic at 4.38%.
+
+- **Conclusion**: Gsearch emerges as a consistent and impactful driver of overall traffic, with a relatively stable conversion rate. However, it's essential to note the varying performance of other channels, particularly Bsearch, which exhibits a higher conversion rate. Understanding these trends allows for strategic decisions in resource allocation and optimization efforts across different channels to maximize overall traffic and conversions.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Challenges
-The challenge was to determine the proportion of footwear products of both brands from their clothing counterparts without a specific product type column. Initially, I generated a keyword string to filter relevant rows from our primary DataFrame. Subsequently, I established a counter DataFrame to preserve data whose product IDs are absent from our initial subset, facilitating the differentiation between the two categories of sportswear.
-```ruby
-# 3) Financial Performance:
-# 1) Q: How much of the company's stock consists of footwear items? 
-
-# There is no column stating the type of product, so I need to rely on the "description" column
-# Challenge: pattern matching -> wildcard -> https://docs.python.org/3/library/re.html#regular-expression-syntax
-footwear_keyword = "shoe*|trainer*|foot*"
-
-# Filter for footwear products
-shoes = merged_df[merged_df["description"].str.contains(footwear_keyword)]
-
-# Filter for clothing products
-# How to Filter Pandas DataFrame Using Boolean Columns https://www.statology.org/pandas-filter-by-boolean-column/
-clothing = merged_df[~merged_df.isin(shoes["product_id"])]
-```
 
 ## Limitations
 - The reliability of the findings and the efficacy of the proposed recommendations depend on the quality of the datasets provided.
