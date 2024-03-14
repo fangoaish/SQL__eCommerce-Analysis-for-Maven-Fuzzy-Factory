@@ -86,6 +86,16 @@ The nonbrand campaign conversion rate remains relatively stable around 3-4%, sug
 
 
 ### _3) Compare monthly trends of Gsearch traffic with other channels to understand their respective impacts on overall traffic._
+   - Why do I want to know?
+      - to bid efficiently and use data to maximize the effectiveness of the marketing budget
+   - So what?
+      - understand which marketing channels are driving the most sessions and orders through the website
+      - understand differences in user characteristics and conversion performance across marketing channels
+      - Optimize bids and allocate marketing spend across a multi-channel portfolio to achieve maximum performance
+   - Measured by?
+      - To identify traffic coming from multiple marketing channels, we will use utm parameters stored in our sessions table
+      - We will LEFT JOIN to our orders table to understand which of the sessions converted to placing an order and generating revenue
+
 First, we'll check the different UTM sources and referrers to identify the incoming traffic.
 
 <img width="339" alt="eCommerce Q4 -1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/883cc548-6d36-485c-a00a-a0f8964d936d">
@@ -149,14 +159,41 @@ we have four channels:
 
 ## Conversion Funnel Analysis
 ### _6) Monitor and improve website performance by tracking session-to-order conversion rates monthly over the first 8 months._
+Before diving into the data directly, let's list out the analysis process
+- **STEP 0**: Have an overview of the conversion funnel path
+   - Conversion funnel path:
+      - /home ; /lander-1
+      - /products
+      - /the-original-mr-fuzzy
+      - /cart
+      - /shipping
+      - /billing
+      - /thank-you-for-your-order
+<img width="173" alt="eCommerce Q7" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/1b54b1a5-3f32-476e-9b24-60057c90bdd1">
 
+- **STEP 1**: Identify each relevant pageview for relevant sessions as the specific funnel step
+- **STEP 2**: Create the session-level conversion funnel view
+- **STEP 3**: Aggregate the data to assess funnel performance
+   - Session Funnels
+<img width="695" alt="eCommerce Q7-1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/9ba4cf9c-4a5f-4fc1-821d-89b8fec6c5ea">
+- Click Through Rate Funnels
+<img width="745" alt="eCommerce Q7-2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/f6073b36-3191-4eb8-aa90-9ba675f1f020">
 
-
-
+The custom lander page has better click-through rates than the original homepage.
 
 
 ## Revenue Analysis
 ### _7) Estimate the revenue generated from the search lander test by analyzing the increase in conversion rates and subsequent revenue._
+   - Why do I want to know?
+      - to understand the performance of the key landing pages and then test to improve the results
+   - So what?
+      - Identifying your top opportunities for landing pages - high volume pages with higher than expected bounce rates or low conversion rates
+      - Setting up A/B experiments on your live traffic to see if you can improve your bounce rates and conversion rates
+      - Analyzing test results and making recommendations on which version of landing pages you should use going forward
+   - Measure by?
+      - To analyze landing page performance and compare multiple pages, we will again use temporary tables and write a multi-step 'data program'
+      - We will find the first pageview for relevant sessions, associate that pageview with the URL seen, and then analyze whether that session had additional pageviews
+
 Before diving into the data directly, let's list out the analysis process
 - **STEP 0**: Find out when the new page /lander launched
     - The first_test_pageview ID is **23504** and was created at 2012-06-19 00:35:54
