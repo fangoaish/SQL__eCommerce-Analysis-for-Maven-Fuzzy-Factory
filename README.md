@@ -151,6 +151,16 @@ we have four channels:
 
 ## Website Performance Monitoring Analysis
 ### _5) Monitor and improve website performance by tracking session-to-order conversion rates monthly over the first 8 months._
+   - Why do I want to know?
+      - to understand and optimize each step of your user's experience on their journey toward purchasing your products
+      - look at each step in the conversion flow to see how many customers drop off and how many continue on at each step
+   - So What?
+      - identify the most common paths customers take before purchasing your products
+      - identify how many of your users continue on to each next step in your conversion flow, and how many users abandon at each step
+      - optimize critical pain points where users are abandoning, so that you can convert more users and sell more products
+   - Measured by?
+      - we will create temporary tables using pageview data in order to build our multi-step funnels
+      - We will first identify the sessions we care about, then bring in the relevant pageviews, then flag each session as having made it to certain funnel steps, and finally perform a summary analysis
 
 <img width="510" alt="eCommerce Q5" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/5d473d87-c48e-44e6-bf7d-a98ab0f5ee59">
 
