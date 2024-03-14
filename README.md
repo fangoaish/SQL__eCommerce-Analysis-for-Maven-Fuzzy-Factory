@@ -247,13 +247,12 @@ Before diving into the data directly, let's list out the analysis process
 
 - **STEP 1**: Connect needed metrics altogether
 - **STEP 2**: Aggregate the data to assess billing-order performance
+   - **_/billing_** page generates 657 sessions, with an average of $22,83 revenue per session
+   - **_/billing-2_** page generates 654 sessions, with an average of $31,34 revenue per session
+   - INCREASE: **USD 8.51 per session**
 <img width="433" alt="eCommerce Q8-1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/46974763-9266-4fc6-82eb-e9930ccf42af">
 
 
-- **_/billing_** page generates 657 sessions, with an average of $22,83 revenue per session
-- **_/billing-2_** page generates 654 sessions, with an average of $31,34 revenue per session
-- INCREASE: **USD 8.51 per session**
-  
 - **STEP 3**: The Past month's billing page session
 <img width="204" alt="eCommerce Q8-2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/3448ec00-3b4a-4bcf-b73b-a5ce725d8cad">
 
