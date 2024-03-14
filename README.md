@@ -237,7 +237,7 @@ Before diving into the data directly, let's list out the analysis process
     - 22,972 * 0.88% incremental conversion = 202 -> incremental orders since July 29th (roughly 4 months)
     - 202/4 = roughly 50 extra orders per month, not bad!
  
-![eCommerce Q6-4](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/b6c4abc4-a652-41a6-a8b0-1642e6cbc4f2)
+![eCommerce Q6-4](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/75a9a286-6a2b-4273-ad8c-3ef02a9104cc)
 
 ![eCommerce Q6-5](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/35e88389-280c-4731-a990-322c1f4e0759)
 
@@ -258,6 +258,10 @@ Before diving into the data directly, let's list out the analysis process
 
 The billing test has a noteworthy result, with a $8.51 lift per billing session. With 1,193 billing sessions in the past month, the test has generated $10,160 in additional revenue over this period.
 
+
+![eCommerce Q8 -3](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/d65ad669-49a7-4fbc-adb1-11505d19ae9e)
+
+![eCommerce Q8-4](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/b1d06285-cf23-4e87-83f4-ac4551f755a1)
 
 
 
