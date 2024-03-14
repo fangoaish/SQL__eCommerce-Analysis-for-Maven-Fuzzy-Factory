@@ -277,6 +277,7 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
       - From specific product pages, we will look at view-to-order conversion rates and create multi-step conversion funnels
 
 <img width="853" alt="eCommerce Q9" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/7118db23-6031-4f8b-bd7c-0987c9e17353">
+![_products Page Performance Between 2012 and 2014](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/172a4c51-5851-49fe-bd87-0454d3282645)
 
 
 
