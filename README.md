@@ -241,14 +241,29 @@ Before diving into the data directly, let's list out the analysis process
 
 ![eCommerce Q6-5](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/35e88389-280c-4731-a990-322c1f4e0759)
 
+### _8) Quantify the impact of the billing test by analyzing revenue per billing page session and monthly billing page sessions._
+- **STEP 0**: Check the billing page version
+<img width="162" alt="eCommerce Q8" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/eeccca64-3e6e-4714-811e-2be62b6ccb96">
+
+- **STEP 1**: Connect needed metrics altogether
+- **STEP 2**: Aggregate the data to assess billing-order performance
+<img width="433" alt="eCommerce Q8-1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/46974763-9266-4fc6-82eb-e9930ccf42af">
 
 
-## Challenges
+- **_/billing_** page generates 657 sessions, with an average of $22,83 revenue per session
+- **_/billing-2_** page generates 654 sessions, with an average of $31,34 revenue per session
+- INCREASE: **USD 8.51 per session**
+  
+- **STEP 3**: The Past month's billing page session
+<img width="204" alt="eCommerce Q8-2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/3448ec00-3b4a-4bcf-b73b-a5ce725d8cad">
 
-## Limitations
-- The reliability of the findings and the efficacy of the proposed recommendations depend on the quality of the datasets provided.
-- Please be aware that our merged DataFrame contains aggregated sales data for each specific product.
-- Additionally, the recency of all the data remains unknown due to the absence of a datetime parameter in the datasets.
+The billing test has a noteworthy result, with a $8.51 lift per billing session. With 1,193 billing sessions in the past month, the test has generated $10,160 in additional revenue over this period.
+
+
+
+
+
+
 
 ## References
 - [DataCamp](https://www.datacamp.com/)
