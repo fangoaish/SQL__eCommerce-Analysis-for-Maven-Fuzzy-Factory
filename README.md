@@ -277,9 +277,12 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
       - From specific product pages, we will look at view-to-order conversion rates and create multi-step conversion funnels
 
 <img width="853" alt="eCommerce Q9" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/7118db23-6031-4f8b-bd7c-0987c9e17353">
-![_products Page Performance Between 2012 and 2014](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/172a4c51-5851-49fe-bd87-0454d3282645)
+
+![_products Page Performance Between 2012 and 2014](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/1b9e19de-b9f3-4129-bf56-ed2b68eb493b)
 
 
+- The introduction of new products has positively impacted user engagement and conversion rates on the /products page. 
+- Over the years, we've seen significant increases in monthly sessions and click-through rates, indicating heightened user interest. Additionally, the conversion rates from /products to orders have consistently improved, reflecting the positive influence of new products on driving sales and revenue growth. 
 
 
 ### _10) Evaluate the impact of introducing new products by tracking monthly sessions to the /products page and changes in click-through rates, along with improvements in conversion rates from /products to placing orders._
@@ -288,7 +291,7 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
       - Using this data, we can develop a deeper understanding of our customer purchase behaviors
    - So what?
       - understand which products are often purchased together
-      - Testi and optimize the way you cross-sell products on your website
+      - Test and optimize the way you cross-sell products on your website
       - understand the conversion rate impact and the overall revenue impact of trying to cross-sell additional products
    - Measured by?
       - We can analyze orders and order_items data to understand which products cross-sell and analyze the impact on revenue
