@@ -6,7 +6,7 @@ This project focuses on the analysis and optimization of marketing channels, mea
 ![ecommerce image](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/491ac749-4f53-4941-ab04-ad8b0e696fdb)
 
 ## Data Sources
-We will be working with six related tables, which contain eCommerce data about:
+We will be working with six related tables, which contain eCommerce data from Maven Fuzzy Factory:
 - Website Activity
 - Products
 - Orders and Refunds
@@ -264,10 +264,37 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
 ![eCommerce Q8-4](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/b1d06285-cf23-4e87-83f4-ac4551f755a1)
 
 
+## Product Analysis
+### _9) Evaluate the impact of introducing new products by tracking monthly sessions to the /products page and changes in click-through rates, along with improvements in conversion rates from /products to placing orders._
+   - Why do I want to know?
+      - to learn how customers interact with each of your products, and how ell each product converts customers
+   - So what?
+      - Understand which of your products generate the most interest on multi-product showcase pages
+      - Analyzing the impact on website conversion rates when you add a new product
+      - Build product-specific conversion funnels to understand whether certain products convert better than others
+   - Measured by?
+      - We'll use website_pageviews data to identify users who viewed the /product page and see which products they clicked next
+      - From specific product pages, we will look at view-to-order conversion rates and create multi-step conversion funnels
+
+<img width="853" alt="eCommerce Q9" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/7118db23-6031-4f8b-bd7c-0987c9e17353">
 
 
 
 
-## References
-- [DataCamp](https://www.datacamp.com/)
-- [Statista](https://www.statista.com/statistics/254489/total-revenue-of-the-global-sports-apparel-market/)
+### _10) Evaluate the impact of introducing new products by tracking monthly sessions to the /products page and changes in click-through rates, along with improvements in conversion rates from /products to placing orders._
+   - Why do I want to know?
+      - to understand which products users are most likely to purchase together, and offer smart product recommendations
+      - Using this data, we can develop a deeper understanding of our customer purchase behaviors
+   - So what?
+      - understand which products are often purchased together
+      - Testi and optimize the way you cross-sell products on your website
+      - understand the conversion rate impact and the overall revenue impact of trying to cross-sell additional products
+   - Measured by?
+      - We can analyze orders and order_items data to understand which products cross-sell and analyze the impact on revenue
+      - We'll also use website_pageviews data to understand if cross-selling hurts overall conversion rates
+
+<img width="937" alt="eCommerce Q10" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/3a58ee22-f250-493d-9d9f-6a59a932894e">
+
+For Product 4, which shows potential cross-selling opportunities with other products but has the lowest total orders among the primary products, the following actions could be considered:
+   - **Promotional Bundles**: Offer bundled deals combining Products 4 with other products to incentivize customers to purchase all items together, thereby increasing the likelihood of cross-sales.
+   - **Enhanced Product Placement**: Strategically place Product 4 alongside other products on the website or in-store displays to encourage customers to explore and consider purchasing all items as a set.
