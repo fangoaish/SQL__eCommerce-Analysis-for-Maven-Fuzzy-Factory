@@ -6,7 +6,7 @@ This project focuses on the analysis and optimization of marketing channels, mea
 ![ecommerce image](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/491ac749-4f53-4941-ab04-ad8b0e696fdb)
 
 ## Data Sources
-We will be working with six related tables, which contain eCommerce data from Maven Fuzzy Factory:
+We will be working with six related tables, which contain eCommerce data from [Maven Fuzzy Factory](https://mavenanalytics.io/data-playground):
 - Website Activity
 - Products
 - Orders and Refunds
