@@ -14,8 +14,16 @@ We will be working with six related tables, which contain eCommerce data from [M
 ![eCommerce Database Analyst for Maven Fuzzy Factory](https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/c6691412-e608-433f-835b-00807a7654f6)
 
 
-## Data Preparation
-No data preparation tasks were required as all the data provided had already been cleaned out prior.
+## SQL Functions
+Here are the SQL functions used in this project:
+- CREATE TEMPORARY TABLE
+- Subquery
+- Aggregate functions
+- Date functions
+- CASE Expression
+- JOINS
+- ROUND()
+These functions are used for various purposes including data manipulation, aggregation, and filtering to analyze trends, calculate conversion rates, and assess the impact of different tests and campaigns on the business.
 
 
 ## Business Objectives
