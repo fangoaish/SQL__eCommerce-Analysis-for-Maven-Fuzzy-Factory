@@ -23,6 +23,8 @@ Here are the SQL functions used in this project:
 - CASE Expression
 - JOINS
 - ROUND()
+
+
 These functions are used for various purposes including data manipulation, aggregation, and filtering to analyze trends, calculate conversion rates, and assess the impact of different tests and campaigns on the business.
 
 
