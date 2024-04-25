@@ -280,10 +280,10 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
 ## Product Analysis
 ### _9) Evaluate the impact of introducing new products by tracking monthly sessions to the /products page and changes in click-through rates, along with improvements in conversion rates from /products to placing orders._
    - Why do I want to know?
-      - to learn how customers interact with each of your products, and how ell each product converts customers
+      - to learn how customers interact with each of our products, and how well each product converts customers
    - So what?
-      - Understand which of your products generate the most interest on multi-product showcase pages
-      - Analyzing the impact on website conversion rates when you add a new product
+      - Understand which of our products generate the most interest on multi-product showcase pages
+      - Analyzing the impact on website conversion rates when we add a new product
       - Build product-specific conversion funnels to understand whether certain products convert better than others
    - Measured by?
       - We'll use website_pageviews data to identify users who viewed the /product page and see which products they clicked next
@@ -304,7 +304,7 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
       - Using this data, we can develop a deeper understanding of our customer purchase behaviors
    - So what?
       - understand which products are often purchased together
-      - Test and optimize the way you cross-sell products on your website
+      - Test and optimize the way we cross-sell products on your website
       - understand the conversion rate impact and the overall revenue impact of trying to cross-sell additional products
    - Measured by?
       - We can analyze orders and order_items data to understand which products cross-sell and analyze the impact on revenue
