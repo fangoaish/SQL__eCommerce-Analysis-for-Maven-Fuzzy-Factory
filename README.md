@@ -298,7 +298,8 @@ The billing test has a noteworthy result, with a $8.51 lift per billing session.
 - Over the years, we've seen significant increases in monthly sessions and click-through rates, indicating heightened user interest. Additionally, the conversion rates from /products to orders have consistently improved, reflecting the positive influence of new products on driving sales and revenue growth. 
 
 
-### _10) Evaluate the impact of introducing new products by tracking monthly sessions to the /products page and changes in click-through rates, along with improvements in conversion rates from /products to placing orders._
+### _10) Elevate the fourth product from a cross-sell item to a primary offering._
+Could you please pull sales data since then, and show how well each product cross-sells from one another?_
    - Why do I want to know?
       - to understand which products users are most likely to purchase together, and offer smart product recommendations
       - Using this data, we can develop a deeper understanding of our customer purchase behaviors
