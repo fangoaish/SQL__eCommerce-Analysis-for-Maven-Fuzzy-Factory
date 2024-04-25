@@ -305,7 +305,7 @@ Could you please pull sales data since then, and show how well each product cros
       - Using this data, we can develop a deeper understanding of our customer purchase behaviors
    - So what?
       - understand which products are often purchased together
-      - Test and optimize the way we cross-sell products on your website
+      - Test and optimize the way we cross-sell products on our website
       - understand the conversion rate impact and the overall revenue impact of trying to cross-sell additional products
    - Measured by?
       - We can analyze orders and order_items data to understand which products cross-sell and analyze the impact on revenue
