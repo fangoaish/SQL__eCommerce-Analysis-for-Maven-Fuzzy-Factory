@@ -199,7 +199,7 @@ Before diving into the data directly, let's list out the analysis process
    - Session Funnels
 <img width="695" alt="eCommerce Q7-1" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/9ba4cf9c-4a5f-4fc1-821d-89b8fec6c5ea">
 
-- Click Through Rate Funnels
+   - Click Through Rate Funnels
 <img width="745" alt="eCommerce Q7-2" src="https://github.com/fangoaish/SQL__eCommerce-Analysis-for-Maven-Fuzzy-Factory/assets/51399519/f6073b36-3191-4eb8-aa90-9ba675f1f020">
 
 The custom lander page has better click-through rates than the original homepage.
