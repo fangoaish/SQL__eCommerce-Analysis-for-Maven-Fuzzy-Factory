@@ -210,9 +210,9 @@ The custom lander page has better click-through rates than the original homepage
    - Why do I want to know?
       - to understand the performance of the key landing pages and then test to improve the results
    - So what?
-      - Identifying your top opportunities for landing pages - high volume pages with higher than expected bounce rates or low conversion rates
-      - Setting up A/B experiments on your live traffic to see if you can improve your bounce rates and conversion rates
-      - Analyzing test results and making recommendations on which version of landing pages you should use going forward
+      - Identifying the top opportunities for landing pages - high volume pages with higher than expected bounce rates or low conversion rates
+      - Setting up A/B experiments on your live traffic to see if we can improve our bounce rates and conversion rates
+      - Analyzing test results and making recommendations on which version of landing pages we should use forward
    - Measure by?
       - To analyze landing page performance and compare multiple pages, we will again use temporary tables and write a multi-step 'data program'
       - We will find the first pageview for relevant sessions, associate that pageview with the URL seen, and then analyze whether that session had additional pageviews
